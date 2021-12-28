@@ -1,0 +1,34 @@
+@import "../../sass/variables";
+
+.editor-container {
+  max-width: 80%;
+  textarea {
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    min-width: 25rem;
+    resize: horizontal;
+    border: none;
+    outline: none;
+    font-size: $editor-size;
+    background-color: $light-blue;
+    padding: 2rem 3rem;
+    border: 2px solid $dark;
+    border-top: none;
+  }
+
+  header {
+    background-color: $blue;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .editor-container {
+    max-width: 100%;
+
+    textarea {
+      resize: none;
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,58 @@
+@import "../../sass/variables";
+
+.previewer-container {
+  width: 100%;
+
+  header {
+    border-left: none;
+    background-color: $pink;
+  }
+
+  .previewer {
+    min-height: 100%;
+    height: fit-content;
+    background-color: $light-pink;
+    border: 2px solid $dark;
+    border-top: none;
+    border-left: none;
+    color: $dark-blue;
+
+    padding: 1rem 2rem;
+
+    h1,
+    h2,
+    h3,
+    h4 {
+      line-height: 1.5;
+    }
+
+    p {
+      line-height: 1.2;
+    }
+
+    code {
+      background-color: $lighter-pink;
+      font-weight: 500;
+      letter-spacing: 0.07rem;
+      font-style: italic;
+      color: $dark-pink;
+    }
+
+    pre {
+      background-color: $lighter-pink;
+    }
+
+    img {
+      max-width: 100%;
+    }
+
+    ul,
+    ol {
+      padding-left: 1rem;
+    }
+
+    li {
+      padding-left: 0.4rem;
+    }
+  }
+}
